@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.profile-card {
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.profile-img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+
+.profile-header {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.4rem;
+}
+.profile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-link:link,
+.profile-link:visited {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1.3rem;
+  background-color: hsl(0, 0%, 20%);
+  width: 50vw;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .profile-card {
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .profile-img {
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+  }
+
+  .profile-header {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+  }
+
+  .location {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+  }
+
+  .profile-description {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.4rem;
+  }
+  .profile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.3rem;
+    background-color: hsl(0, 0%, 20%);
+    width: 50vw;
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .profile-header {
+    font-size: 2.2rem;
+  }
+
+  .location {
+    margin-bottom: 1.7rem;
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .profile-card {
+    padding: 3rem;
+  }
+
+  .profile-img {
+    width: 9rem;
+  }
+
+  .profile-header {
+    font-size: 2.4rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .location {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.4rem;
+  }
+
+  .profile-description {
+    font-size: 1.4rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 1.3rem;
+    width: 40vw;
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .profile-img {
+    width: 10rem;
+  }
+
+  .profile-header {
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .location {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.6rem;
+  }
+
+  .profile-description {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 1.5rem;
+    width: 40vw;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .profile-img {
+    width: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  .profile-header {
+    font-size: 2.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .location {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.7rem;
+  }
+
+  .profile-description {
+    font-size: 1.7rem;
+    padding-bottom: 1.7rem;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 1.6rem;
+    width: 35vw;
+  }
+
+  .profile-links {
+    gap: 2rem;
+  }
+  .container {
+    height: 120vh;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .profile-link:link,
+  .profile-link:visited {
+    width: 30vw;
+  }
+}
